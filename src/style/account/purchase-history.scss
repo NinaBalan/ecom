@@ -1,5 +1,11 @@
 .purchase-history {
 
+    &__content {
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+        margin: 37px 0;
+    }
+
      &__page-title {
         border-bottom: 1px solid #CCC;
      }
@@ -7,5 +13,11 @@
         border-bottom: 1px solid #F2F2F2;
     } 
 }
-//.purchases {}
+
+.purchases {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, 80px);
+    width: 360px;
+}
 //.purchase-details {}
