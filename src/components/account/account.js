@@ -57,4 +57,4 @@ function mapStateToProps(state) {
 
 Account = connect(mapStateToProps, actions)(Account);
 
-export default Account;
+export default Account;                                                    
