@@ -1,4 +1,11 @@
 import { setHeaderLinks, setNavbarLinks, changeNavbarActive } from "./headernavbar";
 import { fetchUserPurchases, setPurchaseDetail } from "./user";
 
-export { setHeaderLinks, setNavbarLinks,  changeNavbarActive,  fetchUserPurchases, setPurchaseDetail };
+import { fetchShopCategories } from "./shop";
+
+export { setHeaderLinks,
+         setNavbarLinks,  
+         changeNavbarActive,  
+         fetchUserPurchases, 
+         setPurchaseDetail,
+         fetchShopCategories };
