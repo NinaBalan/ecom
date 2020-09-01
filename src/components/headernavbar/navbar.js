@@ -17,7 +17,7 @@ class Navbar extends Component {
                 {
                     this.props.navbarLinks.map((link, index) => {
                         return (
-                            <a className={`navbar__link ${link.active ? 'green-text' : ''}`} key={index} onClick={() => this.props.handleOnClick(link)}>
+                            <a className={`navbar__link ${link.active ? 'green-text' : ''}`} key={index} onClick={() => this.handleOnClick(link)}>
                                 {link.title}
                             </a>
                         )
