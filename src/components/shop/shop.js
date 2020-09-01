@@ -19,6 +19,7 @@ class Shop extends Component {
         // fetch navbar links
             // set navbar links
             // filter products with links
+        this.props.fetchShopProducts();    
     }
     render() {
         return (
