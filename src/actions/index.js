@@ -1,7 +1,13 @@
-import { setHeaderLinks, setNavbarLinks, changeNavbarActive } from "./headernavbar";
+import { setHeaderLinks, 
+        setNavbarLinks, 
+        changeNavbarActive 
+        } from "./headernavbar";
+
 import { fetchUserPurchases,
          setPurchaseDetail, 
-         fetchCartProduct } from "./user";
+         fetchCartProducts,
+         addCartProduct 
+        } from "./user";
 
 import { 
         fetchShopCategories,
@@ -17,7 +23,7 @@ export {
 
         fetchUserPurchases, 
         setPurchaseDetail,
-        fetchCartProduct,
+        fetchCartProducts,
 
         fetchShopCategories,
         fetchShopProducts,
