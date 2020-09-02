@@ -10,6 +10,7 @@ import CartButton from "./cartButton";
 class Shop extends Component {
     constructor() {
         super()
+
         this.state = {
             showCart: true
         }
@@ -23,10 +24,10 @@ class Shop extends Component {
                 path: "/signin"
             }
         ]
-        this.props.setHeaderLinks(headerLinks);
-        // fetch shop products action creator
+        this.props.setHeaderLinks(headerLinks);// fetch shop products action creator
+        
         this.props.fetchShopCategories();
-        // fetch navbar links
+            // fetch navbar links
             // set navbar links
             // filter products with links
         this.props.fetchShopProducts();    
@@ -55,10 +56,9 @@ class Shop extends Component {
         //return <ShopCart className='shop__cart'/>
         return (
             <div className="shop">
-                {/* shop search bar */}
+            
                 <ShopSearchBar onSubmit={this.onSubmit} className="shop__search-bar"/>
-                {/* shop product */}
-                {/* shop cart button */}
+               
                 <div className="shop__products">
                     {
                         this.props.filteredProducts.map(product => {
@@ -68,7 +68,7 @@ class Shop extends Component {
                         })
                     }
                 </div>
-                {/*shop cart button */
+                {
                     this.state.showCart ? <ShopCart className="shop__cart"/> : ''
                 }
                 <CartButton onClick={this.handleAddToCart} className="shop__cart-button" icon="fas fa-cart-plus"/>    
