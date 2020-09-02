@@ -1,16 +1,24 @@
 import React, { Component } from "react";
 
+import { connect } from "react-redux";
+import * as actions from "../../actions";
+
 function CartButton({className, icon}) {
-    return(
+    return (
         <div className={`${className} cart-button`}>
             <i className={icon}/>
         </div>
     )
 }
-function CartContent({className}) {
+function CartContent({className, products}) {
+    let count = products.lenght;
     return (
         <div className={`${className} cart-content`}>
-
+            <div className="cart-content__title">
+                Cart ({count})
+            </div>
+            <div className="cart-content__products"></div>
+            <div className="cart-content__footer"></div>
         </div>
     )
 }
@@ -20,7 +28,7 @@ class ShopCart extends Component {
         return (
             <div className={`${className} shop-cart`}>
                 <CartButton className="shop-cart__toggle" icon="fas fa-times"/>
-                <CartContent className="shop-cart__content"/>
+                <CartContent className="shop-cart__content" products={[243, 3434, 4554 ]}/>
             </div>
         )
     }
