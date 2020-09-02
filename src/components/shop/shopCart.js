@@ -1,4 +1,5 @@
 import React, { Component } from  "react";
+import CartProduct from "./cartProduct";
 
 import { connect } from "react-redux";
 import * as actions from "../../actions";
@@ -12,7 +13,7 @@ function CartButton({className, icon}) {
 }
 function CartContent({className, products}) {
     let count = products.lenght;
-    let productsJSX = products.map(product => <h1 key={product}>{product}</h1>);
+    let productsJSX = products.map(product => <CartProduct key={product}/>);
     return (
         <div className={`${className} cart-content`}>
             <div className="cart-content__title">
