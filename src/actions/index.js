@@ -6,7 +6,8 @@ import { setHeaderLinks,
 import { fetchUserPurchases,
          setPurchaseDetail, 
          fetchCartProducts,
-         addCartProduct 
+         addCartProduct,
+         signIn
         } from "./user";
 
 import { 
