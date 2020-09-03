@@ -20,24 +20,28 @@ class ShippingForm extends Component {
                     placeholder="Name"
                     name="name"
                 component={FormInput}/>
+
                 <Field className="shipping-form__address"
                     type="address"
                     title="Street Address"
                     placeholder="Street Address"
                     name="address"
                 component={FormInput}/>
+
                 <Field className="shipping-form__city"
                     type="city"
                     title="City"
                     placeholder="City"
                     name="city"
                 component={FormInput}/>
+
                 <Field className="shipping-form__state"
                     type="state"
                     title="State"
                     placeholder="State"
                     name="state"
                 component={FormInput}/>
+                
                 <Field className="shipping-form__zipcode"
                     type="zipcode"
                     title="Zipcode"
@@ -52,6 +56,7 @@ class ShippingForm extends Component {
                     title="Use This Address"
                     name="use-this-address"
                 component={FormButton}/>
+
                 <Field className="shipping-form__back"
                     onClick={() => history.push('/signin')}
                     type="button"
@@ -59,7 +64,7 @@ class ShippingForm extends Component {
                     name="back"
                     short={true}
                 component={FormButton}/>
-                <OrderSummary className="shipping-form__summary"/>
+                <OrderSummary className="shipping-form__order-summary"/>
             </form>
         )
     }
